@@ -32,6 +32,7 @@ const Attendance_inForm = ({LoginFlag,setLoginFlag}) => {
         });
         // You can clear the form or perform any other actions here
         setFormData({ ...formData, enrollment_id:'' });
+        window.location.reload();
         firstInputRef.current.focus();
       } catch (error) {
         setFormData({ ...formData, enrollment_id:'' });
